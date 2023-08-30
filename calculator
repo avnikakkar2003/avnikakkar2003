@@ -1,0 +1,41 @@
+//TASK:2--
+// SIMPLE CALCULATOR
+#include <iostream>
+using namespace std;
+int main() 
+{
+  char oper;
+  float n1,n2;
+
+  cout<<"Enter operation to perform: +, -, *, /:";
+  cin>>oper;
+
+  cout<<"Enter the first numbers:";
+  cin>>n1;
+  cout<<"Enter the second numbers:";
+  cin>>n2;
+
+  switch(oper) 
+  {
+    case '+':
+      cout<<"Addition of two numbers is:"<<n1+n2;
+      break;
+
+    case '-':
+      cout<<"substraction of two numbers is:"<<n1-n2;
+      break;
+
+    case '*':
+      cout<<"Multiplication of two numbers is:"<<n1*n2;
+      break;
+
+    case '/':
+      cout<<"Division of two numbers is:"<<n1/n2;
+      break;
+
+    default:
+      cout<<"Error! select the correct operatoer";
+      break;
+  }
+  return 0;
+}
